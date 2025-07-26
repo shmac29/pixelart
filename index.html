@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Pixel Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <h1>Editor de Pixel Art</h1>
+        
+        <div class="editor">
+            <div class="tools-section">
+                <h2>Ferramentas</h2>
+                <div class="tools">
+                    <button id="pencil" class="tool active">Pincel</button>
+                    <button id="bucket" class="tool">Balde</button>
+                    <button id="eraser" class="tool">Borracha</button>
+                </div>
+            </div>
+            
+            <div class="grid-container">
+                <div id="pixel-grid"></div>
+                <div class="grid-info">Grade 16×16</div>
+            </div>
+            
+            <div class="color-section">
+                <h2>Cores</h2>
+                <div class="color-palette">
+                    <div class="color selected" style="background-color: #000000;" data-color="#000000"></div>
+                    <div class="color" style="background-color: #FFFFFF;" data-color="#FFFFFF"></div>
+                    <div class="color" style="background-color: #FF0000;" data-color="#FF0000"></div>
+                    <div class="color" style="background-color: #00FF00;" data-color="#00FF00"></div>
+                    <div class="color" style="background-color: #0000FF;" data-color="#0000FF"></div>
+                    <div class="color" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
+                    <div class="color" style="background-color: #FF00FF;" data-color="#FF00FF"></div>
+                    <div class="color" style="background-color: #00FFFF;" data-color="#00FFFF"></div>
+                    <div class="color" style="background-color: #FFA500;" data-color="#FFA500"></div>
+                    <div class="color" style="background-color: #800080;" data-color="#800080"></div>
+                    <div class="color" style="background-color: #A52A2A;" data-color="#A52A2A"></div>
+                    <div class="color" style="background-color: #808080;" data-color="#808080"></div>
+                    <div class="color" style="background-color: #FFD700;" data-color="#FFD700"></div>
+                    <div class="color" style="background-color: #008000;" data-color="#008000"></div>
+                    <div class="color" style="background-color: #FF4500;" data-color="#FF4500"></div>
+                    <div class="color" style="background-color: #4B0082;" data-color="#4B0082"></div>
+                </div>
+            </div>
+            
+            <div class="actions-section">
+                <h2>Ações</h2>
+                <div class="actions">
+                    <button id="clear">Limpar</button>
+                    <button id="export-png">Exportar PNG</button>
+                    <button id="export-json">Exportar JSON</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Criado com ❤️ | <a href="https://github.com/shmac29/pixelart" target="_blank" id="github-link" onclick="window.open(this.href, '_blank'); return false;">Ver no GitHub</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
